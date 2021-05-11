@@ -1,0 +1,34 @@
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //background: rgb(199, 199, 199);
+  background: $color-primary-1;
+  width: 100%;
+  height: auto;
+  padding: 1rem; 
+} 
+
+.attribution {
+  //color: #000;
+  font-size: 1.6rem;
+}
+
+.home-link {
+  @include transition-fast;
+  color: $color-secondary-1-3;
+
+  &:hover {
+    color: $color-secondary-1-1;
+  }
+}
+
+.cfs-link {
+  @include transition-fast;
+  color: $color-secondary-2-3;
+
+  &:hover {
+    color: $color-secondary-2-1;
+  }
+}

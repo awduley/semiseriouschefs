@@ -1,0 +1,60 @@
+.page {
+  flex-flow: column nowrap;
+}
+
+.content-area {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  //background: blue;
+}
+
+.main {
+  // flex-flow: column nowrap;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.8rem;
+  width: 100%;
+  //background: red;
+  padding: 1rem; 
+}
+
+.article {
+  margin: 1rem 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: -4%;
+    width: 50%;
+    height: 1px;
+    background: black;
+  }
+}
+
+.entry-title { 
+  color: $color-primary-1;
+  @include transition-slow;
+
+  &:hover {
+    color: $color-primary-3;
+  }
+}
+
+.entry-thumbnail {
+  margin: 1rem 0;
+  width: auto;
+  
+  img {
+    border-radius: 2px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.entry-excerpt {
+
+}

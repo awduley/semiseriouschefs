@@ -1,0 +1,12 @@
+// Configuration partials
+@import 'config/variables';
+@import 'config/base';
+@import 'config/iframes';
+@import 'config/mixins';
+@import 'config/typography';
+
+// Section partials
+@import 'sections/header';
+@import 'sections/sidebars';
+@import 'sections/blog';
+@import 'sections/footer';

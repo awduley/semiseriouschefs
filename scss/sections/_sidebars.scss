@@ -1,0 +1,46 @@
+.sidebar {
+  display: flex;
+  justify-content: space-around;
+  min-width: 20rem; 
+  max-width: 32rem;
+  //background: green;
+}
+
+.sidebar-1 {
+  grid-template-columns: 1 / 2;
+}
+
+.sidebar-3 {
+  grid-template-columns: 4 / 5;
+}
+
+.widget-li {
+  font-size: 1.8rem;
+  //background: blue; 
+  padding: 1rem;
+  width: auto;
+
+  & ul {
+    text-align: left;
+    //background: orange;
+
+    li {
+      margin: 1rem 0;
+    }
+  }
+
+  a {
+    color: $color-secondary-2-1;
+    @include transition-fast;
+
+    &:hover {
+      color: darken($color-secondary-2-1, 20);
+    }
+  }
+
+}
+
+.widget-title {
+  color: $color-secondary-2-3;
+  text-align: center;
+}
